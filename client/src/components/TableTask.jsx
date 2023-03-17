@@ -43,6 +43,10 @@ export const TableTask = () => {
 
   //Mensagens de alerta
 
+  useEffect(() => {
+    if (error) alert.error("Não foi possivel realizar essa operação!")
+    if (sucess) alert.show("Operação realizada com sucesso!")
+  }, [error, sucess])
 
 
   //Checkbox task
@@ -58,8 +62,6 @@ export const TableTask = () => {
     console.log(location?.state?.task)
   }
 
-  var checked = 0
-  console.log(checked)
 
   return (
     <>

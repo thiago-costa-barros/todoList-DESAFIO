@@ -7,6 +7,8 @@ export const RoutesComponent = () => {
     return (
         <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/create" element={<Home />} />
+            
         </Routes>
     )
 }

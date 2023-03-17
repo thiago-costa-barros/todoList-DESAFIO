@@ -30,7 +30,7 @@ export const InputTask = () => {
         })
 
     const save = (data) => {
-        createTask(data, setLoading, setSucess)
+        createTask(data, setLoading, setSucess, navigate)
     }
     return (
         <form onSubmit={handleSubmit(save)}>
